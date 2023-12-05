@@ -1,0 +1,67 @@
+  .gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  :root {
+    --color1: #ff007d; /* Default gradient color 1 */
+    --color2: #7c00ff; /* Default gradient color 2 */
+  }
+  .image-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .image-container img {
+    max-width: 30%;
+    display: inline-block;
+  }
+  .preview-container {
+    text-align: center;
+    margin: 10px;
+  }
+  .preview-container div {
+    position: relative;
+    display: inline-block;
+  }
+  .preview-container img {
+    max-width: 100px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .checkmark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 255, 0, 0.5);
+    font-size: 24px;
+    color: white;
+    opacity: 0;
+  }
+  .criteria {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: linear-gradient(to right, var(--color1), var(--color2));
+    text-align: center;
+    width: fit-content;
+  }
+  .navigation {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .upload {
+    margin: 20px;
+    text-align: center;
+  }
+  .color-picker {
+    margin: 20px;
+    text-align: center;
+  }
